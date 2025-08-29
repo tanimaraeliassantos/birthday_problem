@@ -44,7 +44,7 @@ MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
 
 while True:
     print('How many birthdays shall I generate?(Max 100)')
-    response = input('>')
+    response = input('> ')
     if response.isdecimal() and (0 < int(response) <= 100):
         numBDays = int(response)
         break
