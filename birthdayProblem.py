@@ -51,3 +51,6 @@ while True:
         numBDays = int(response)
         break
 print()
+
+print('Here are', numBDays, 'birthdays:')
+birthdays = getBirthdays(numBDays)
