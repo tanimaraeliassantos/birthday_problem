@@ -31,3 +31,21 @@ def getMatch(birthdays):
         for b, birthdayB in enumerate(birthdays[a + 1 :]):
             if birthdayA == birthdayB:
                 return birthdayA
+
+# Display intro:
+print('''Birthday Paradox
+      The Birthday Paradox shows us that in a group of N people,
+      the odds that two of them have matching birthdays is surprisingly
+      large.''')
+
+#Set up a tuple of motnh names in order:
+MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+          'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+
+while True:
+    print('How many birthdays shall I generate?(Max 100)')
+    response = input('>')
+    if response.isdecimal() and (0 < int(response) <= 100):
+        numBDays = int(response)
+        break
+print()
