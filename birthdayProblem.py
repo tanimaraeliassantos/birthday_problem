@@ -58,3 +58,4 @@ for i, birthday in enumerate(birthdays):
     if i != 0:
         print(', ', end='')
         monthName = MONTHS[birthday.month - 1]
+        dateText = '{} {}'.format(monthName, birthday.day)
