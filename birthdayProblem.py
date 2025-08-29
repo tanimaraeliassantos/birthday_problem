@@ -63,3 +63,12 @@ for i, birthday in enumerate(birthdays):
 print()
 
 match = getMatch(birthdays)
+
+print('In this simulation, ', end = '')
+if match != None:
+    monthName = MONTHS[match.month - 1]
+    dateText = '{} {}'.format(monthName, match.day)
+    print('multiple people have a birthday on', dateText)
+else:
+    print('there are no matching birthdays.')
+print()
