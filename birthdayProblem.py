@@ -23,14 +23,16 @@ def getBirthdays(numberOfBirthdays):
         birthdays.append(birthday)
     return birthdays
 
+
 def getMatch(birthdays):
     if len(birthdays) == len(set(birthdays)):
         return None
-    
+
     for a, birthdayA in enumerate(birthdays):
-        for b, birthdayB in enumerate(birthdays[a + 1 :]):
+        for b, birthdayB in enumerate(birthdays[a + 1:]):
             if birthdayA == birthdayB:
                 return birthdayA
+
 
 # Display intro:
 print('''Birthday Paradox
@@ -38,7 +40,7 @@ print('''Birthday Paradox
       the odds that two of them have matching birthdays is surprisingly
       large.''')
 
-#Set up a tuple of motnh names in order:
+# Set up a tuple of motnh names in order:
 MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
           'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
 
