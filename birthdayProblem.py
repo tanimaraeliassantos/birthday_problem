@@ -54,3 +54,7 @@ print()
 
 print('Here are', numBDays, 'birthdays:')
 birthdays = getBirthdays(numBDays)
+for i, birthday in enumerate(birthdays):
+    if i != 0:
+        print(', ', end='')
+        monthName = MONTHS[birthday.month - 1]
